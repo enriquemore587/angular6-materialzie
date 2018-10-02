@@ -1,20 +1,35 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<mz-navbar>
+  <a href="#" class="brand-logo">Noohwicycling.com</a>
+  <mz-navbar-item-container [align]="'right'">
+    <mz-navbar-item><a href="#">HOME</a></mz-navbar-item>
+    <mz-navbar-item><a href="#">CONTACTO</a></mz-navbar-item>
+    <mz-navbar-item><a routerLink="js">COMUNIDAD</a></mz-navbar-item>
+  </mz-navbar-item-container>
+</mz-navbar>
+<mz-parallax [height]="500">
+  <img src="/assets/uno.jpg">
+</mz-parallax>
 
+<div class="section white">
+  <div class="row container">
+    <h2 class="header">WEEKENDRIDES</h2>
+    <p class="grey-text text-darken-3 lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+      cupiditate nulla voluptate similique molestiae veniam sed repellat, voluptatibus debitis eius ut tempore minima
+      nisi quisquam minus, odit esse. Exercitationem, iusto.</p>
+  </div>
+</div>
+<mz-parallax [height]="500">
+  <img src="/assets/dos.jpg">
+</mz-parallax>
+<div class="section black">
+  <div class="row container">
+    <h2 class="header grey-text text-darken-3 lighten-3">Contacto</h2>
+    <mz-input-container>
+      <i mz-icon-mdi mz-input-prefix [icon]="'email'">
+      </i>
+      <input mz-input [label]="'Email'" [validate]="true" [dataError]="'Email is invalid'" [dataSuccess]="'Email is valid'" style="color: white"
+        id="email-input" placeholder="Enter your email" length="150" type="email">
+    </mz-input-container>
+  </div>
+
+</div>
