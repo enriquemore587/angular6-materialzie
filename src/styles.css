@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+.prime_orange{
+    background-color: #FF3800;
+}
+.prime_black{
+    background-color: #1a1a19;
+    color: whitesmoke;
+}
